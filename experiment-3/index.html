@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Experiment 3</h1>
+    <nav>
+      <button onclick="showSection('exp1')">3.1 Product Cards</button>
+      <button onclick="showSection('exp2')">3.2 Library</button>
+      <button onclick="showSection('exp3')">3.3 Class</button>
+    </nav>
+  </header>
+
+  <!-- 3.1 PRODUCT CARDS -->
+  <section id="exp1" class="active">
+    <h2>Product Cards</h2>
+    <div class="card-container" id="productContainer"></div>
+  </section>
+
+  <!-- 3.2 LIBRARY -->
+  <section id="exp2">
+    <h2>Library Management</h2>
+
+    <input type="text" id="search" placeholder="Search books..." onkeyup="searchBooks()">
+
+    <div class="form">
+      <input type="text" id="title" placeholder="Book Title">
+      <input type="text" id="author" placeholder="Author">
+      <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <div id="bookList"></div>
+  </section>
+
+  <!-- 3.3 CLASS -->
+  <section id="exp3">
+    <h2>Person Class Hierarchy</h2>
+    <div id="personContainer"></div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>

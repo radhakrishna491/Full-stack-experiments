@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experiment 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Experiment 2</h2>
+    <div class="nav-links">
+        <button onclick="showSection('exp1')">Experiment 2.1</button>
+        <button onclick="showSection('exp2')">Experiment 2.2</button>
+        <button onclick="showSection('exp3')">Experiment 2.3</button>
+    </div>
+</div>
+
+<!-- CONTENT -->
+
+<!-- 2.1 -->
+<div id="exp1" class="section active">
+    <h1>Live Character Counter</h1>
+    <textarea id="textInput" maxlength="150"></textarea>
+    <p id="count">0/150 Characters</p>
+</div>
+
+<!-- 2.2 -->
+<div id="exp2" class="section">
+    <h1>Product Filter</h1>
+
+    <select onchange="filterProducts(this.value)">
+        <option value="all">All Products</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+    </select>
+
+    <div id="products"></div>
+</div>
+
+<!-- 2.3 -->
+<div id="exp3" class="section">
+    <h1>SVG Drawing Tool</h1>
+    <input type="color" id="colorPicker">
+    <button onclick="clearCanvas()">Clear</button>
+    <svg id="canvas"></svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

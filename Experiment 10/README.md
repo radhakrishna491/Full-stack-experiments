@@ -1,4 +1,4 @@
-# Experiment 3.3.1 – Todo CRUD App (MERN)
+# Experiment 10– Todo CRUD App (MERN)
 
 ## Personal Information
 Name: Jiya Rohilla  
